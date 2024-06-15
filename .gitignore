@@ -1,0 +1,9 @@
+/djtest3project/db.sqlite3
+/media/
+/static/
+*.sqlite3
+*.log
+*.pyc
+/djtest3project/djtest3project/wsgi.py
+*.htaccess
+/.venv/
