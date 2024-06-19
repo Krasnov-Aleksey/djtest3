@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Главная {% endblock %} - Рецепты</title>
+</head>
+<body>
+<header>
+    <a href="{% url 'index' %}">Главная</a>
+    <a href="{% url 'recipe_category' %}">Список категорий рецептов</a>
+    <a href="{% url 'list_recipe' %}">Ваши рецепты</a>
+    <a href="{% url 'add_recipe' %}">Добавить рецепт</a>
+    <form action="{% url 'logout' %}" method="post">
+        {% csrf_token %}
+        <button>Выход</button>
+    </form>
+        <a href="{% url 'register' %}">Регистрация</a>
+        <a href="{% url 'login' %}">Вход</a>
+</header>
+<div>
+    {% block content %}
+    <p>Site</p>
+    {% endblock %}
+</div>
+</body>
+</html>
