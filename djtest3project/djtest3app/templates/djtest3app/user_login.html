@@ -1,4 +1,10 @@
 {% extends 'djtest3app/base.html' %}
 {% block content %}
-<h1>User_login</h1>
+<h4>Авторизация на сайте</h4>
+
+<form method="post" action="{% url 'login' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Авторизоваться</button>
+</form>
 {% endblock %}
