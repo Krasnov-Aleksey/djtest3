@@ -1,4 +1,9 @@
 {% extends 'djtest3app/base.html' %}
 {% block content %}
-<h1>list_recipe</h1>
+<h2>Список рецептов</h2>
+{% for recipe in recipes %}
+<img src="{{ recipe.image_recipe.url }}" alt="{{ recipe.name_recipe }}" width="100">
+<h5> {{ recipe.name_recipe }}</h5>
+<a href="{% url 'recipe' recipe.id %}">Посмотреть рецепт</a> <br>
+{% endfor %}
 {% endblock %}

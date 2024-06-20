@@ -9,14 +9,18 @@
 <header>
     <a href="{% url 'index' %}">Главная</a>
     <a href="{% url 'recipe_category' %}">Список категорий рецептов</a>
+    {% if user.is_authenticated %}
     <a href="{% url 'list_recipe' %}">Ваши рецепты</a>
     <a href="{% url 'add_recipe' %}">Добавить рецепт</a>
     <form action="{% url 'logout' %}" method="post">
         {% csrf_token %}
         <button>Выход</button>
     </form>
-        <a href="{% url 'register' %}">Регистрация</a>
-        <a href="{% url 'login' %}">Вход</a>
+    <h2>Вы вошли по логином {{ user.username }}</h2>
+    {% else %}
+    <a href="{% url 'register' %}">Регистрация</a>
+    <a href="{% url 'login' %}">Вход</a>
+    {% endif %}
 </header>
 <div>
     {% block content %}

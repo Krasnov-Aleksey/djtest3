@@ -11,6 +11,12 @@ urlpatterns = [
     path('logout/', views.UserLogoutView.as_view(), name='logout'),
     path('register/', views.UserRegisterView.as_view(), name='register'),
     path('login/', views.UserLoginView.as_view(), name='login'),
+    path('success/', views.Success.as_view(), name='success'),
+    path('recipe/<int:recipe_id>/', views.recipe, name='recipe'),
+    path('update_recipe/<int:recipe_id>/', views.update_recipe, name='update_recipe'),
+    path('recipe_read/<int:recipe_id>/', views.recipe_read, name='recipe_read'),
+    path('recipe_in_category/<int:category_id>/', views.recipe_in_category, name='recipe_in_category'),
+
 ]
 
 urlpatterns += (static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

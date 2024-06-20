@@ -1,4 +1,7 @@
 {% extends 'djtest3app/base.html' %}
 {% block content %}
-<h1>recipe_category</h1>
+<h2>Список категории рецептов</h2>
+{% for category in categorys %}
+<a href="{% url 'recipe_in_category' category.id %}">{{ category }}</a>
+{% endfor %}
 {% endblock %}
