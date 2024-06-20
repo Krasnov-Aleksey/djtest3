@@ -16,6 +16,7 @@
         {% csrf_token %}
         <button>Выход</button>
     </form>
+    <h2>Вы вошли по логином {{ user.username }}</h2>
     {% else %}
     <a href="{% url 'register' %}">Регистрация</a>
     <a href="{% url 'login' %}">Вход</a>

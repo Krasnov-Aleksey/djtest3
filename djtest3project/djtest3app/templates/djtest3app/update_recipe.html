@@ -1,0 +1,9 @@
+{% extends 'djtest3app/base.html' %}
+{% block content %}
+<p>Редактировать рецепт</p>
+<form action="" method="post"  enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Редактировать</button>
+</form>
+{% endblock %}

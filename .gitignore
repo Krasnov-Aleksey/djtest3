@@ -7,3 +7,4 @@
 /djtest3project/djtest3project/wsgi.py
 *.htaccess
 /.venv/
+/djtest3project/media/

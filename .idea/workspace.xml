@@ -5,8 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34e32666-98b4-4b0c-9bd8-3e93eafd8986" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/djtest3project/djtest3app/templates/djtest3app/recipe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/djtest3project/djtest3app/templates/djtest3app/recipe_in_category.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/djtest3project/djtest3app/templates/djtest3app/recipe_read.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/djtest3project/djtest3app/templates/djtest3app/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/djtest3project/djtest3app/templates/djtest3app/update_recipe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djtest3project/djtest3app/templates/djtest3app/add_recipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/djtest3project/djtest3app/templates/djtest3app/add_recipe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djtest3project/djtest3app/templates/djtest3app/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/djtest3project/djtest3app/templates/djtest3app/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djtest3project/djtest3app/templates/djtest3app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/djtest3project/djtest3app/templates/djtest3app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djtest3project/djtest3app/templates/djtest3app/list_recipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/djtest3project/djtest3app/templates/djtest3app/list_recipe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djtest3project/djtest3app/templates/djtest3app/recipe_category.html" beforeDir="false" afterPath="$PROJECT_DIR$/djtest3project/djtest3app/templates/djtest3app/recipe_category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djtest3project/djtest3app/templates/djtest3app/user_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/djtest3project/djtest3app/templates/djtest3app/user_login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djtest3project/djtest3app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djtest3project/djtest3app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djtest3project/djtest3app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/djtest3project/djtest3app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,15 +38,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "start",
-    "last_opened_file_path": "C:/Users/user/PycharmProjects/djtest3/djtest3project/djtest3app"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;s4&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/PycharmProjects/djtest3/djtest3project/djtest3app/templates/djtest3app&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PycharmProjects\djtest3\djtest3project\djtest3app\templates\djtest3app" />
       <recent name="C:\Users\user\PycharmProjects\djtest3\djtest3project\djtest3app" />
     </key>
   </component>
