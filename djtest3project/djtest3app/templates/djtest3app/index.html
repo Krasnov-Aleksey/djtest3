@@ -3,7 +3,6 @@
 <div class="row">
 
 {% for recipe in recipes %}
-
     <div class="col-sm-6">
         <div class="card" style="width: 18rem;">
             <img src="{{ recipe.image_recipe.url }}" class="card-img-top" alt="{{ recipe.name_recipe }}">
@@ -14,7 +13,6 @@
             </div>
         </div>
     </div>
-
 {% endfor %}
 </div>
 {% endblock %}

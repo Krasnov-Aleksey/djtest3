@@ -2,6 +2,11 @@
 {% block content %}
 <h2>Список категории рецептов</h2>
 {% for category in categorys %}
-<a href="{% url 'recipe_in_category' category.id %}">{{ category }}</a>
+<ul class="nav flex-column">
+    <li class="nav-item">
+        <a class="nav-link active" href="{% url 'recipe_in_category' category.id %}">
+            {{ category }}</a>
+    </li>
+</ul>
 {% endfor %}
 {% endblock %}

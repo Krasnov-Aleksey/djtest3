@@ -1,14 +1,19 @@
 {% extends 'djtest3app/base.html' %}
 {% block content %}
-<img src="{{ recipe.image_recipe.url }}" alt="{{ recipe.name_recipe }}" width="100">
-<h5>{{ recipe.name_recipe }}</h5>
-<h6>Описание рецепта</h6>
-<p>{{ recipe.description_recipe }}</p>
-<h6>Шаги приготовления</h6>
-<p>{{ recipe.cooking_steps}}</p>
-<h6>Время приготовления</h6>
-<p>{{ recipe.cooking_time }}</p>
-{% if user.is_authenticated %}
-<a href="{% url 'update_recipe' recipe.id %}">Редактировать</a>
-{% endif %}
+<div class="card" style="width: 18rem;">
+  <img src="{{ recipe.image_recipe.url }}" class="card-img-top" alt="{{ recipe.name_recipe }}">
+  <div class="card-body">
+    <h5 class="card-title">{{ recipe.name_recipe }}</h5>
+    <p class="card-text">{{ recipe.description_recipe }}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{ recipe.cooking_steps}}</li>
+    <li class="list-group-item">Время приготовления {{ recipe.cooking_time }}</li>
+  </ul>
+    <div class="card-body">
+        {% if user.is_authenticated %}
+    <a href="{% url 'update_recipe' recipe.id %}" class="card-link">Редактировать</a>
+        {% endif %}
+  </div>
+</div>
 {% endblock %}
