@@ -1,7 +1,20 @@
 {% extends 'djtest3app/base.html' %}
 {% block content %}
-    {% for recipe in recipes %}
-        <img src="{{ recipe.image_recipe.url }}" alt="{{ recipe.name_recipe }}" width="100"><br>
-        <a href="{% url 'recipe_read' recipe.id %}">{{ recipe.name_recipe }}</a><br>
-    {% endfor %}
+<div class="row">
+
+{% for recipe in recipes %}
+
+    <div class="col-sm-6">
+        <div class="card" style="width: 18rem;">
+            <img src="{{ recipe.image_recipe.url }}" class="card-img-top" alt="{{ recipe.name_recipe }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ recipe.name_recipe }}</h5>
+                <p class="card-text">{{ recipe.description_recipe }}</p>
+                <a href="{% url 'recipe_read' recipe.id %}" class="btn btn-primary">Посмотреть рецепт</a>
+            </div>
+        </div>
+    </div>
+
+{% endfor %}
+</div>
 {% endblock %}
