@@ -11,17 +11,23 @@ from random import choice
 
 
 def index(request):
+    quantity_recipes_index = 5
     recipes = Recipes.objects.all()
     recipe_list = []
     recipe_rnd = []
-    for item in recipes:
-        recipe_list.append(item)
+    if len(recipes) > quantity_recipes_index:
+        for item in recipes:
+            recipe_list.append(item)
 
-    for _ in range(5):
-        rnd = choice(recipe_list)
-        recipe_rnd.append(rnd)
-        index_rnd = recipe_list.index(rnd)
-        recipe_list.pop(index_rnd)
+        for _ in range(quantity_recipes_index):
+            rnd = choice(recipe_list)
+            recipe_rnd.append(rnd)
+            index_rnd = recipe_list.index(rnd)
+            recipe_list.pop(index_rnd)
+    else:
+        for item in recipes:
+            recipe_rnd.append(item)
+
     return render(request, 'djtest3app/index.html', {'recipes': recipe_rnd})
 
 
